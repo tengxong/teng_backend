@@ -33,6 +33,7 @@ app.get('/got/:id',(req,res) =>{
   var params = [id]
 
   var sql ='SELECT * FROM user WHERE id'
+    cls
     connection.query(sql,params,(err, rows, fields) =>{
         if(err) throw err
          res.send(rows)
